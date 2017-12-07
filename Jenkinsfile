@@ -3,7 +3,8 @@ properties([
     [$class: 'GithubProjectProperty',
     displayName: '',
     projectUrlStr: 'https://github.com/kiran-organisation/test2.git'],
-    pipelineTriggers([githubPush()])])
+    pipelineTriggers([githubPush()])
+])
 
 pipeline {
     agent any 
